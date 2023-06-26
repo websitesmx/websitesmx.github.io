@@ -1,0 +1,627 @@
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.form-body {
+    margin: 0;
+    background-color: #024b46;
+}
+body {
+   /***padding-top: 100px;***/
+    margin: 0;
+    background-color: #008a8a;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.logo {
+    height: 70px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+.header {
+    background: hsl(120, 100%, 20%);
+ /***   height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;***/
+    position: fixed;
+    width: 100%;
+    padding:  0.3em 0;
+    letter-spacing:  0.2em;
+    margin-bottom: 5em;
+
+}
+.formulario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #f0f8ff;
+    letter-spacing:  0.2em;
+}  
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container {
+    width: 96%;
+    max-width: 1200px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav-menu-item {
+    display: inline-block;
+    line-height:  92px;
+    margin: 0 auto;
+}
+.nav-menu-link {
+    display: flex;
+    text-decoration: none;
+    text-shadow: -3px -3px 3px hsl(0, 0%, 2%);
+    /***-webkit-text-stroke: 1px #afc43e;***/
+    letter-spacing: 1px;
+    color: #afc43e;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-size:  20px;
+    padding: 4px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.nav-menu-link:hover {
+    color: #f0f8ff;
+    /***cursor: pointer;***/
+}
+.nav-menu-link:active {
+    color: hsl(60, 3%, 6%);
+}
+.nav-menu-link:focus {
+    color: #93ff05;
+}
+.main {
+    width: 1200px;
+    height: auto;    
+    margin: 0 auto;
+}
+.container-nosotros {
+    padding-top: 2rem;
+    padding-bottom: 5.3rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/nosotros2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 180px;    
+    margin: 0 auto;
+}
+.container-service {
+    padding-top: 2rem;
+    padding-bottom: 5.3rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/servicios.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 180px;    
+    margin: 0 auto;
+}
+.container-main {
+    padding-top: 2rem;
+    padding-bottom: 5.3rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bg-home.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 180px;    
+}
+.container-contacto {
+    padding-top: 2rem;
+    padding-bottom: 5.3rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/contenedor.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 180px;    
+    margin: 0 auto;
+}
+.imgcontainer {
+    border-radius: 0.5em;
+    /***display: flexbox;***/
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 1200px;
+    height: 300px;    
+    margin-top: 100px;
+}
+.logo-ini {
+    display: flexbox;
+    align-content: center;
+    height: 140px;
+    margin-right: 10px;
+}
+.name-emp {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    text-shadow: -3px -3px 3px hsl(0, 0%, 2%);
+    color: #00ffff;
+    font-style: oblique;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d8d5d5;
+    margin: 15px;
+    /**margin-left: 100px;***/
+    text-shadow: -2px -2px 2px hsl(0, 0%, 2%);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.descripcion {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #1b1d1d;
+    text-align: center;
+}
+
+/*** ICONS SLIDE***/
+.container-services {
+    max-width: 1200px;
+    padding: 1em;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+.servicios-container {
+    align-items: center;
+    gap: 1em;
+
+}
+
+.servicios-container .box_section:nth-child(1) {
+    background-color: #008a8a;
+}
+
+.servicios-container .box_section {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    min-height: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Main */
+.group-services {
+    align-items: center;
+}
+
+/* main menu*/
+.group-services-icons {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+
+.group-services-icons .service_icons {
+    padding:0cap;
+    border-radius: 0.5em;
+    width: 24%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.group-services-icons .service_icons:nth-child(1) {
+    background-color: #349e14;
+}
+
+.group-services-icons .service_icons:nth-child(2) {
+    background-color: #349e14;
+}
+
+.group-services-icons .service_icons:nth-child(3) {
+    background-color: #349e14;
+}
+
+.group-services-icons .service_icons:nth-child(4) {
+    background-color: #349e14;
+}
+/***MAIN DE icons PAGE SERVICIOS***/
+.group-service-icon {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+
+.group-service-icon .service_icon {
+    padding:0cap;
+    border-radius: 0.5em;
+    width: 19%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.group-service-icon .service_icon:nth-child(1) {
+    background-color: #349e14;
+}
+
+.group-service-icon .service_icon:nth-child(2) {
+    background-color: #349e14;
+}
+
+.group-service-icon .service_icon:nth-child(3) {
+    background-color: #349e14;
+}
+
+.group-service-icon .service_icon:nth-child(4) {
+    background-color: #349e14;
+}
+.group-service-icon .service_icon:nth-child(5) {
+    background-color: #349e14;
+}
+/*** contacto **************************************************************************/
+/* Main */
+.group-contacto {
+    align-items: center;
+}
+
+/* main menu*/
+.group-contacto-icon {
+    
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2em;
+}
+
+.group-contacto-icon .contacto-icon {
+    padding: 0cap;
+    border-radius: 0.5em;
+    width: 32%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.group-contacto-icon .contacto-icon img {
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+.group-contacto-icon .contacto-icon:nth-child(1) {
+    background-color: #349e14;
+}
+
+.group-contacto-icon .contacto-icon:nth-child(2) {
+    background-color: #349e14;
+}
+
+.group-contacto-icon .contacto-icon:nth-child(3) {
+    background-color: #349e14;
+}
+
+/**** text icons contacto page ***/
+.text-icon-contacto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    text-shadow: -1px -1px 1px hsl(0, 0%, 100%);
+    letter-spacing: 0.8px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.text-icon-text {
+    text-decoration: none;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+
+}
+/*** LINK CORREO EN CONTACTO***/
+.cont-link-correo {
+    text-decoration: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/*** TEXT ICONS CONTACTO ***/
+.cont-link {
+    text-decoration: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.cont-link :hover {
+    color: #ffffff;
+    /***cursor: pointer;***/
+}
+.cont-link :active {
+    color: hsl(182, 83%, 45%);
+}
+.cont-link :focus {
+    color: #cd05ff;
+}
+/************* Map GOOGGLE **************/
+.content-frame {
+    position: flex;
+    width: 810px;
+    height: 510px;
+    border-radius: 0.5em;
+    margin-top: 1px;
+    margin: 0 auto;
+    border: 5px solid yellowgreen;
+    margin: 30px auto;
+}
+.ubication {
+    width: inherit;
+    height: inherit;
+   /*** object-fit: cover;***/
+}
+
+/*** text icons main inicio***/
+.text-icons {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    text-shadow: -1px -1px 1px hsl(0, 0%, 100%);
+    letter-spacing: 0.8px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+/*** text icons page servicios main***/
+.text-icon {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    text-shadow: -1px -1px 1px hsl(0, 0%, 100%);
+    letter-spacing: 0.8px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+/** text MAIN inicio **/
+.text-descrip-icons {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px;
+
+}
+/*** text main page servicios***/
+.text-descrip-icon {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px;
+}
+/*** servicios slide ****/
+.servicios-img {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/infra.jpg);
+}
+/*** clientes en inicio slide ****/
+.clientes-img {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/track.jpg);
+}
+/*** nosotros slide ***/
+.mision-img {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/nosotros1.jpg);
+}
+.valores-img {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/nosotros1.jpg);
+}
+/**** nosotros pages secciones ******/
+
+
+.titulo-nosotros {
+    padding: 15px 0px;
+    color: #00ffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: -1px -1px 1px #000000;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 25px;
+
+}
+.descripcion-nosotros {
+    padding: 20px 0px;
+    color: #61f00e;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1px -1px 1px #000000;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 17px;
+}
+/*** text en slide page nosotros ***/
+.nosotros-text {
+    padding: 0px 0px;
+    color: #0ac7e9;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1px -1px 1px #000000;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 17px;
+}
+/*** TITULO EN SLIDE NOSOTROS PAGE***/
+.txt-tit-nosotros {
+    padding: 35px 0px;
+    color: #61f00e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: -1px -1px 1px #000000;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 25px;
+    
+}
+/*** box en slide pages ***/
+.bg-sec1 {
+  /***position: absolute;***/
+  border-radius: 0.5em;
+  background-attachment: fixed;
+  background-size: auto;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  margin: 30px auto;
+}
+/*** text en slide pages ***/
+.bg-txt1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 130px 0px;
+    color: #1bf3a0;
+    text-shadow: -1px -1px 1px #000000;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 20px;
+}
+.img-clientes {
+    
+    width: auto;
+    height: auto;
+}
+.img-container {
+    justify-content: space-between;
+    text-align: center;
+    width: auto;
+    height: auto;    
+    margin: 30px auto;
+}
+/*** UBICACION CONTACTO ***/
+.ubication {
+   
+
+}
+/*** FOOTER NAV ***/
+
+.container-footer  {
+    /***border-radius: 0.5em;***/
+    background: #024b46; 
+    text-align: center;
+    padding: 0.1em 0;
+   /*** margin-top: auto;***/
+    /***width: auto;***/
+    /***justify-content: space-between;***/
+}
+.titulo-map {
+    width: 98%;
+    height: 90%;
+    text-decoration: none;
+    text-shadow: -2px -2px 2px hsl(0, 0%, 2%);
+    /***-webkit-text-stroke: 1px #afc43e;**/
+    color: #afc43e;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:  14px;
+    padding: 4px 5px;
+    border-radius: 2px;
+    margin-right: 2px;
+}
+.map {
+    text-align: left;
+    width: 1200px;
+    height: 16px;
+}
+.footer_seccion {
+    width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px 0;
+
+    /*** grid ***/
+    display: grid;
+    grid-template-columns: 6fr auto;
+    
+}
+.footer_inicio {
+    
+    /*** grid ***/
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+.nav-footer {
+    border-radius: 5px;
+	min-height: 5px;
+	font-weight: bold;
+	padding: 5px;
+	/**position: relative;**/
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+.text-footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #141414;
+   text-align: center;
+   margin: 20px;
+}
+
+.nav-maps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.nav-map-item {
+    display: flex;
+    line-height:  15px;
+    margin: 0px auto;
+    
+}
+
+.nav-map-link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #afc43e;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:  14px;
+    border-radius: 5px;
+    margin-inline: 3px;
+    margin-top: 6px;
+    
+}
+.nav-map-link:hover {
+    color: #f0f8ff;
+    /***cursor: pointer;***/
+}
+.nav-map-link:active {
+    color: hsl(60, 3%, 6%);
+}
+.nav-map-link:focus {
+    color: #93ff05;
+}
+.pie-page {
+    height: 20px;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+    
+}
