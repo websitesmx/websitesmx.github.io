@@ -123,7 +123,7 @@ body {
 .container-contacto {
     padding-top: 2rem;
     padding-bottom: 5.3rem;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/contenedor.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/servicios.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     width: 1200px;
