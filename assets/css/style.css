@@ -10,9 +10,9 @@ body {
    /***padding-top: 100px;***/
     margin: 0;
     background-color: #008a8a;
-    display: grid;
+    /*display: grid;*/
     min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
+    /*grid-template-rows: auto 1fr auto;*/
 }
 .logo {
     height: 70px;
@@ -30,7 +30,9 @@ body {
     width: 100%;
     padding:  0.3em 0;
     letter-spacing:  0.2em;
-    margin-bottom: 5em;
+    margin-bottom: 0.1em;
+    height: 100px;
+    
 
 }
 .formulario {
@@ -42,8 +44,7 @@ body {
 .logo-nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    
 }
 .nav-menu {
     margin: 0;
@@ -55,6 +56,8 @@ body {
     max-width: 1200px;
     align-items: center;
     margin: 0 auto;
+    position: relative; 
+    height: 100px;
 }
 
 .nav-menu-item {
@@ -91,18 +94,8 @@ body {
     height: auto;    
     margin: 0 auto;
 }
-.container-nosotros {
-    padding-top: 2rem;
-    padding-bottom: 5.3rem;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/nosotros2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 1200px;
-    height: 180px;    
-    margin: 0 auto;
-}
-.container-service {
-    padding-top: 2rem;
+.container-main-inicio{
+    padding-top: 10rem;
     padding-bottom: 5.3rem;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/servicios.jpg);
     background-position: center center;
@@ -111,46 +104,46 @@ body {
     height: 180px;    
     margin: 0 auto;
 }
-.container-main {
-    padding-top: 2rem;
+
+.container-nosotros {
+    padding-top: 10rem;
     padding-bottom: 5.3rem;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bg-home.jpg);
     background-position: center center;
     background-repeat: no-repeat;
+    
     width: 1200px;
     height: 180px;    
+    margin: 0 auto;
 }
+
 .container-contacto {
-    padding-top: 2rem;
+    padding-top: 10rem;
     padding-bottom: 5.3rem;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/servicios.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/sh-recicladora-page.jpg);
     background-position: center center;
     background-repeat: no-repeat;
+    
     width: 1200px;
     height: 180px;    
     margin: 0 auto;
 }
 .imgcontainer {
     border-radius: 0.5em;
-    /***display: flexbox;***/
-    justify-content: space-between;
-    align-items: center;
     text-align: center;
-    width: 1200px;
-    height: 300px;    
-    margin-top: 100px;
+    width: 100%;
+    height: auto;    
+   background-size: cover;
 }
 .logo-ini {
-    display: flexbox;
-    align-content: center;
     height: 140px;
     margin-right: 10px;
 }
 .name-emp {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
-    text-shadow: -3px -3px 3px hsl(0, 0%, 2%);
-    color: #00ffff;
+    text-shadow: 2px 2px 5px hsl(0, 0%, 2%);
+    color: #5dd569;
     font-style: oblique;
     font-size: 1.5rem;
     text-align: center;
@@ -161,15 +154,26 @@ body {
     color: #d8d5d5;
     margin: 15px;
     /**margin-left: 100px;***/
-    text-shadow: -2px -2px 2px hsl(0, 0%, 2%);
+    text-shadow: 1px 1px 1px hsl(0, 0%, 2%);
     letter-spacing: 1px;
     font-size: 1.2rem;
     text-align: center;
 }
+
+
+
 .descripcion {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     color: #1b1d1d;
+    text-align: center;
+}
+
+.descripcion-inicio{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: #8ef48e;
+    text-shadow: 1px 1px 3px hsl(0, 0%, 2%);
     text-align: center;
 }
 
@@ -395,29 +399,24 @@ body {
 }
 /*** text icons page servicios main***/
 .text-icon {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #000000;
-    text-shadow: -1px -1px 1px hsl(0, 0%, 100%);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffffec;
+    text-shadow: 1px 1px 1px hsl(0, 0%, 0%);
     letter-spacing: 0.8px;
     font-size: 1.2rem;
     text-align: center;
 }
 /** text MAIN inicio **/
-.text-descrip-icons {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
-    color: #ffffff;
-    text-align: center;
-    margin: 5px;
 
-}
-/*** text main page servicios***/
+
 .text-descrip-icon {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     color: #ffffff;
     text-align: center;
-    margin: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+   /* margin: 5px;*/
 }
 /*** servicios slide ****/
 .servicios-img {
@@ -432,7 +431,7 @@ body {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/nosotros1.jpg);
 }
 .valores-img {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/nosotros1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/nosotros2.jpg);
 }
 /**** nosotros pages secciones ******/
 
